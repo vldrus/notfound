@@ -1,0 +1,14 @@
+[Unit]
+Description=NotFound Service
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/notfound
+ExecStart=/opt/notfound/notfound -addr localhost:8888 -cert /opt/cert.crt -key /opt/cert.key
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
