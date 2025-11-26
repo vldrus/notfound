@@ -7,7 +7,7 @@ echo '2365b31f0b0ccfef70baf7f36f3309b5033d4a9a *notfound.tar.gz' | sha1sum -c
 tar -x -C /opt -f notfound.tar.gz
 rm notfound.tar.gz
 
-mv /opt/notfound/notfound.service /etc/systemd/system/notfound.service
+cp /opt/notfound/notfound.service /etc/systemd/system/notfound.service
 
 systemctl enable notfound
 systemctl start notfound
