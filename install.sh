@@ -12,4 +12,4 @@ cp /opt/notfound/notfound.service /etc/systemd/system/notfound.service
 systemctl enable notfound
 systemctl start notfound
 
-echo -e '\n🟩 Installing NotFound done\n'
+echo -e '\n🟩 Installing NotFound DONE\n'
