@@ -8,8 +8,8 @@ import (
 
 func main() {
 	addr := flag.String("addr", "localhost:8888", "")
-	cert := flag.String("cert", "/opt/cert.crt" , "")
-	key  := flag.String("key" , "/opt/cert.key" , "")
+	cert := flag.String("cert", "/usr/local/share/cert/cert.crt" , "")
+	key  := flag.String("key" , "/usr/local/share/cert/cert.key" , "")
 
 	flag.Parse()
 
