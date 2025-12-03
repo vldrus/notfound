@@ -5,8 +5,7 @@ Wants=network-online.target
 
 [Service]
 Type=simple
-WorkingDirectory=/opt/notfound
-ExecStart=/opt/notfound/notfound -addr localhost:8888 -cert /opt/cert.crt -key /opt/cert.key
+ExecStart=/usr/local/bin/notfound -addr localhost:8888 -cert /usr/local/share/cert/cert.crt -key /usr/local/share/cert/cert.key
 
 [Install]
 WantedBy=multi-user.target
