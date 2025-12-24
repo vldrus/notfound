@@ -1,0 +1,13 @@
+/.vscode
+
+/cert.crt
+/cert.key
+
+/bin
+/lib
+/share
+
+/notfound
+/notfound.exe
+
+/notfound-linux-amd64.tar.gz
