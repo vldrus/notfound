@@ -27,7 +27,7 @@ mkdir -p /usr/local/share/nofound
 mkdir -p /usr/local/lib/systemd/system
 
 wget -O notfound-linux-amd64.tar.gz https://github.com/vldrus/notfound/releases/download/v1.0.0/notfound-linux-amd64.tar.gz
-echo 'f677eb1980ad6c30f3a5547abfec3b93d87c09788689d061f39005b1237285e8 *notfound-linux-amd64.tar.gz' | sha256sum -c
+echo 'b47b1d7c68da6f5f29464c8e2e7291e8e7e33dda761255a009dca97223de0e0f *notfound-linux-amd64.tar.gz' | sha256sum -c
 
 tar -x -C /usr/local -f notfound-linux-amd64.tar.gz
 
