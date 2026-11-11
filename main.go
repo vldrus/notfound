@@ -44,8 +44,8 @@ func main() {
 
 	flag.Parse()
 
-    log.Println("NotFound started")
-    log.Println("Built with", GoVersion)
+	log.Println("NotFound started")
+	log.Println("Built with", GoVersion)
 
 	var certStore atomic.Pointer[tls.Certificate]
 
