@@ -31,7 +31,7 @@ chmod 755 bin
 chmod 755 lib lib/systemd lib/systemd/system
 chmod 755 share share/notfound
 
-CGO_ENABLED=0 go build -ldflags="-s -w -X 'main.GoVersion=$(go version)'"
+CGO_ENABLED=0 go build -ldflags="-s -w -X 'main.CommitHash=$(git rev-parse --short HEAD)'"
 
 cp notfound         bin
 cp notfound.service lib/systemd/system

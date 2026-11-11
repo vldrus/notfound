@@ -29,12 +29,13 @@ import (
 	"net/http"
 	"os"
 	"os/signal"
+	"runtime"
 	"sync/atomic"
 	"syscall"
 	"time"
 )
 
-var GoVersion = "go version unknown"
+var CommitHash = "unknown"
 
 func main() {
 	addr := flag.String("addr", "0.0.0.0:8888", "")
@@ -44,8 +45,7 @@ func main() {
 
 	flag.Parse()
 
-	log.Println("NotFound started")
-	log.Println("Built with", GoVersion)
+	log.Printf("NotFound '%s' (%s) started\n", CommitHash, runtime.Version())
 
 	var certStore atomic.Pointer[tls.Certificate]
 
