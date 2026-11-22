@@ -14,7 +14,7 @@ import (
 )
 
 func main() {
-	addr := flag.String("addr", "0.0.0.0:8888", "")
+	addr := flag.String("addr", ":8888", "")
 
 	certFile := flag.String("cert", "/usr/local/share/cert/cert.crt", "")
 	keyFile  := flag.String("key",  "/usr/local/share/cert/cert.key", "")
