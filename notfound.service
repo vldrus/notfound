@@ -5,7 +5,7 @@ Wants=network-online.target
 
 [Service]
 Type=simple
-ExecStart=/usr/local/bin/notfound -addr 0.0.0.0:8888 -cert /usr/local/share/cert/cert.crt -key /usr/local/share/cert/cert.key
+ExecStart=/usr/local/bin/notfound -addr :8888 -cert /usr/local/share/cert/cert.crt -key /usr/local/share/cert/cert.key
 ExecReload=/bin/kill -s SIGHUP $MAINPID
 
 [Install]
