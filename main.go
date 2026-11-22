@@ -32,6 +32,7 @@ func main() {
 	certStore.Store(&cert)
 
 	signals := make(chan os.Signal, 1)
+
 	signal.Notify(signals, syscall.SIGHUP)
 
 	go func() {
