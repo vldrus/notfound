@@ -14,7 +14,7 @@ GOROOT="$PWD/go"
 GOPATH="$PWD/gopath"
 
 rm -f notfound
-rm -f notfound-linux-amd64.tar.gz
+rm -f notfound-linux-amd64.tar.xz
 
 mkdir -p bin
 mkdir -p lib/systemd/system
@@ -26,7 +26,7 @@ cp notfound         bin
 cp notfound.service lib/systemd/system
 cp LICENSE          share/notfound
 
-tar -c -z -f notfound-linux-amd64.tar.gz bin lib share
+tar -c -J -f notfound-linux-amd64.tar.xz bin lib share
 
 rm -rf bin
 rm -rf lib
